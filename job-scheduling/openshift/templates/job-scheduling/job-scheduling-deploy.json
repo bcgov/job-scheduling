@@ -318,6 +318,6 @@
       "description": "Secret resource name",
       "required": true,
       "value": "job-scheduling"
-    },
+    }
   ]
 }
