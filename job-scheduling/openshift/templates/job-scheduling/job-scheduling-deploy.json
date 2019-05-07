@@ -319,12 +319,5 @@
       "required": true,
       "value": "job-scheduling"
     },
-    {
-      "name": "KEY_RING_STORAGE_NAME",
-      "displayName": "Key Ring Directory Name",
-      "description": "Persistent storage directory name for key ring, e.g., key-ring, if left blank a value will be defaulted.",
-      "required": true,
-      "value": "key-ring"
-    }
   ]
 }
