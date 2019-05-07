@@ -6,18 +6,18 @@ export PROJECT_OS_DIR=${PROJECT_OS_DIR:-../../openshift}
 # Templates NOT in this list will have they GIT referances over-ridden
 # with the values of GIT_URI and GIT_REF
 export skip_git_overrides=""
-export GIT_URI="https://github.com/JonTaylorBCGov/JobScheduling.git"
+export GIT_URI="https://github.com/JonTaylorBCGov/job-scheduling.git"
 export GIT_REF="master"
 
 # The project components
 # - defaults to the support the Simple Project Structure
-export components=${components:-"JobScheduling"}
+export components=${components:-"job-scheduling"}
 
 # The builds to be triggered after buildconfigs created (not auto-triggered)
 export builds=${builds:-""}
 
 # The images to be tagged after build
-export images=${images:-"JobScheduling"}
+export images=${images:-"job-scheduling"}
 
 # The routes for the project
 export routes=${routes:-""}
