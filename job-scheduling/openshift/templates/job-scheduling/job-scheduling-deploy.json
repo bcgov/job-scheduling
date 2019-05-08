@@ -325,7 +325,7 @@
       "displayName": "Key Ring Directory Name",
       "description": "Persistent storage directory name for key ring, e.g., key-ring, if left blank a value will be defaulted.",
       "required": true,
-      "value": "key-ring"
+      "value": "key-ring-job-scheduling"
     }
   ]
 }
