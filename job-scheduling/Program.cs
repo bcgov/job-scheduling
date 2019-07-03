@@ -144,6 +144,7 @@ namespace job_scheduling
                     var _responseString = _httpResponse2.ToString();
                     var _responseContent2 = await _httpResponse2.Content.ReadAsStringAsync();
 
+                    Console.Out.WriteLine(_responseString);
                     Console.Out.WriteLine(_responseContent2);
 
                     // End of scheduled task
