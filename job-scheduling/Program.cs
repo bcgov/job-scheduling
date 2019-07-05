@@ -132,11 +132,13 @@ namespace job_scheduling
                     client.DefaultRequestHeaders.Add("OData-MaxVersion", "4.0");
                     client.DefaultRequestHeaders.Add("OData-Version", "4.0");
                     client.DefaultRequestHeaders.Add("Accept", "application/json");
+                    //client.DefaultRequestHeaders.Add("content-type", "application/json");
                     //client.DefaultRequestHeaders.Add("Content-Type", "application/json; charset=utf-8");
 
                     string url = dynamicsOdataUri + dynamicsJobName;
 
                     HttpRequestMessage _httpRequest = new HttpRequestMessage(HttpMethod.Post, url);
+                    _httpRequest.Content = new StringContent("{}", System.Text.Encoding.UTF8, "application/json");
 
                     var _httpResponse2 = await client.SendAsync(_httpRequest);
                     HttpStatusCode _statusCode = _httpResponse2.StatusCode;
